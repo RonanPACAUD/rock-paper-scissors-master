@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  
+  <title>Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <main>
+    <div class="game-container">
+      <div class="score-board">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="score-box">
+          <p>SCORE</p>
+          <div class="score">
+            0
+          </div>
+        </div>
+      </div>
+
+
+      <div class="game-board select-choice">
+        <div class="first-row">
+          <div class="game-choice-button paper" id="paper">
+            <div class="center">
+              <img src="./images/icon-paper.svg" alt="paper">
+            </div>
+          </div>
+          <div class="game-choice-button scissors" id="scissors">
+            <div class="center">
+              <img src="./images/icon-scissors.svg" alt="scissors">
+            </div>
+          </div>
+        </div>
+        <div class="second-row">
+          <div class="game-choice-button rock" id="rock">
+            <div class="center">
+              <img src="./images/icon-rock.svg" alt="rock">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fenetre des resultats -->
+
+      <div class="game-board compare-choice is-hidden">
+        <div class="you-picked">
+          <p>YOU PICKED</p>
+          <div class="game-choice-button paper is-hidden" id="paper">
+            <div class="center">
+              <img src="./images/icon-paper.svg" alt="paper">
+            </div>
+          </div>
+          <div class="game-choice-button scissors is-hidden" id="scissors">
+            <div class="center">
+              <img src="./images/icon-scissors.svg" alt="scissors">
+            </div>
+          </div>
+          <div class="game-choice-button rock is-hidden" id="rock">
+            <div class="center">
+              <img src="./images/icon-rock.svg" alt="rock">
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div class="result-message">
+            
+          </div>
+          <button class="play-again">
+            PLAY AGAIN
+          </button>
+        </div>
+        <div class="house-picked">
+          <p>THE HOUSE PICKED</p>
+          <div class="game-choice-button paper is-hidden" id="paper">
+            <div class="center">
+              <img src="./images/icon-paper.svg" alt="paper">
+            </div>
+          </div>
+          <div class="game-choice-button scissors is-hidden" id="scissors">
+            <div class="center">
+              <img src="./images/icon-scissors.svg" alt="scissors">
+            </div>
+          </div>
+          <div class="game-choice-button rock is-hidden" id="rock">
+            <div class="center">
+              <img src="./images/icon-rock.svg" alt="rock">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="rules-button">
+        RULES
+      </button>
+
+      
+    </div>
+
+    <!-- Modale des règles -->
+
+    <div class="modal-container is-hidden">
+      <div class="rules-modal">
+        <div class="rules-modal-header">
+          <h1>RULES</h1>
+          <img src="./images/icon-close.svg" alt="close" class="close-modal">
+        </div>
+        <img src="./images/image-rules.svg" alt="rules" class="rules-img">
+      </div>
+    </div>
+
+  </main>
+<script src="./app.js"></script>
+</body>
+</html>
